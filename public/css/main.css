@@ -108,9 +108,7 @@ body {
 }
 
 .hero-img-mobile{
-    display: block;
-    width: 343px;
-    height: 371px;
+    width: 100%;
     object-fit: contain;
     border-radius: 7.335px;
     padding-bottom: 64px;
@@ -170,13 +168,11 @@ body {
     gap: 14px;
 }
 
-
 .read-together-mobile-img {
     display: block;
-    background: var(--main-color);
+   
     width: 100%;
     border-radius: 7.35px;
-    margin-bottom: 64px;
 }
 
 .read-together-tablet-img{display: none;}
@@ -185,6 +181,7 @@ body {
 /*     mid-container    */
 
 .mid-container {
+    padding: 16px;
     background-color: #fff;
 }
 .pattern-circle-img {
@@ -196,17 +193,25 @@ body {
     transform: rotate(70.091deg);
 }
 
-
-
 .image-not-average-mobile {
     display: block;
     width: 100%;
     border-radius: 15px;
 }
 .image-not-average-tablet{display: none;}
+.image-not-average-desktop{display: none;}
 
+.logos-tech{
+    display: none;
+}
 
 /*    membership-container    */
+
+.membership-container {
+    padding: 16px;
+    background-color: #fff;
+}
+
 
 /*    media-query   */
 
@@ -253,11 +258,9 @@ body {
     }
 
     .hero-img-mobile{display: none;}
-
     .hero-img-tablet{
         border-radius: 15px;
         display: block;
-        height: 798px;
         width: 100%;
     }
 
@@ -290,6 +293,7 @@ body {
     }
 
     .read-together-mobile-img {display: none;}
+    .read-together-desktop-img{display: none;}
     .read-together-tablet-img {
         display: block;
         width: 100%;
@@ -298,6 +302,7 @@ body {
 
     .mid-container {
         background-color: #fff;
+        padding: 32px;
     }
 
     .book-club {
@@ -313,12 +318,22 @@ body {
     }
 
     .image-not-average-mobile{display: none;}
+    .image-not-average-desktop{display:none;}
     .image-not-average-tablet{
         display: block;
-        width: 704px;
+        width: 100%;
         object-fit: contain;
         border-radius: 15px;
     }
+
+    .logos-tech {
+        display: block;
+        position: relative;
+        left: 550px;
+        bottom: 150px;
+    }
+
+ 
     
 }
 
@@ -333,7 +348,7 @@ body {
     h2 {
         font-size: 3.125rem;
     }
-
+    /*    header-section     */
     .nav-bar {
         margin: 32px 135px;
     }
@@ -398,17 +413,20 @@ body {
         display: flex;
     
     }
-    .book-club {
-        width: 50%;
-    }
+   
 
     .image-not-average-mobile{display: none;}
     .image-not-average-tablet{display: none;}
-
     .image-not-average-desktop {
         display: block;
         width: 100%;
         border-radius: 12px;
+    }
+
+    .logos-tech {
+        display: block;
+        position: relative;
+        bottom: 15px;
     }
 
 
